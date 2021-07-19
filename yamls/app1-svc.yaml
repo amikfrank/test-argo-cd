@@ -1,8 +1,8 @@
----
-kind: Service
 apiVersion: v1
+kind: Service
 metadata:
   name: webapp1-svc
+  namespace: app
 spec:
   selector:
     app: webapp1
