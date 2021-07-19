@@ -2,6 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: webapp1-deploy
+  namespace: app
 spec:
   selector:
     matchLabels:
@@ -14,6 +15,6 @@ spec:
     spec:
       containers:
       - name: webapp1
-        image: amikacr.azurecr.io/python-test:latest
+        image: amikkandel/demo-python-app:v1
         ports:
         - containerPort: 80
