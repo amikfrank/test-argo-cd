@@ -1,0 +1,11 @@
+---
+kind: Service
+apiVersion: v1
+metadata:
+  name: webapp1-svc
+spec:
+  selector:
+    app: webapp1
+  ports:
+  - port: 80
+  type: ClusterIP # LoadBalancer # NodePort # 
